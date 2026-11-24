@@ -43,6 +43,7 @@ def main() -> None:
         written = f.read()
     if written != LINE:
         raise ValueError("bytes on disk differ from the line")
+    print(f"wrote {len(LINE)} chars to {OUTPUT_PATH}")
 
 
 if __name__ == "__main__":
